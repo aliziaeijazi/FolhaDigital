@@ -5,10 +5,20 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body>
+<body class="bg-gray-50">
 <!-- start Header -->
-<header class="fixed relative bg-transparent ">
+<div>
+    <svg class="-top-16 right-0 absolute" width="1334" height="1008" viewBox="0 0 1334 1008" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1093.16 629.208C1007.26 719.521 1020.43 921.57 895.653 936.175C768.364 951.075 713.72 764.239 610.584 685.695C536.443 629.232 431.676 619.059 378.677 542.467C322.786 461.695 329.431 359.905 318.131 263.051C302.63 130.199 220.635 -22.0493 300.516 -127.45C379.33 -231.441 544.154 -216.538 675.871 -208.972C785.943 -202.649 872.122 -123.723 977.176 -88.5823C1106.55 -45.3054 1274.61 -85.9426 1361.01 20.211C1447.66 126.658 1443.37 293.922 1389.05 417.43C1338.91 531.419 1178.79 539.179 1093.16 629.208Z"
+              fill="#00D276"/>
+    </svg>
+</div>
+<header class="z-50 sticky top-0 bg-transparent">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 ">
         <div class="flex justify-between items-center  py-12 md:justify-start md:space-x-10">
             <div class="flex justify-start  lg:w-0 lg:flex-1">
@@ -23,7 +33,7 @@
             </div>
 
             <!--start nav-->
-            <nav class="hidden md:flex space-x-3">
+            <nav class=" hidden md:flex space-x-3">
                 <a href="#" class="text-base font-semibold text-gray-500 hover:text-gray-900">
                     Como pedir
                 </a>
@@ -53,30 +63,66 @@
 
 <!--start first section-->
 <section>
-    <div class="flex max-w-7xl  mt-32 mx-auto px-4 sm:px-6 ">
+    <div class="z-10 flex max-w-7xl  mt-16 mx-auto px-4 sm:px-6 ">
         <div class="w-2/6">
             <h6 class="my-6 text-2xl text-gray-400">Expanda seu universo com os</h6>
             <h1 class="text-7xl font-semibold font-serif">
                 melhores livros
             </h1>
             <p class="my-6 text-gray-400">
-                Aqui você vai encontrar livros de diversos autores, biografias de inumeros atores e grandes clássicos da literatura nacional. E também terá um espaço para compartilhar sua opinião com outros amantes dos livros.  Assine e fique por dentro de cada novidade.
+                Aqui você vai encontrar livros de diversos autores, biografias de inumeros atores e grandes clássicos da
+                literatura nacional. E também terá um espaço para compartilhar sua opinião com outros amantes dos
+                livros. Assine e fique por dentro de cada novidade.
             </p>
-
-            <div class="m-0 p-0 my-12 shadow-2xl  w-3/12 absolute rounded-xl ">
-                <input class="m-0 bg-transparent outline-none p-3 w-9/12 h-16" placeholder="Insira seu e-mail">
-                <button class="-m-2 w-3/12 h-16 bg-green-500 rounded-r-xl" >Assinar</button>
+            <div class="z-20 m-0 p-0 my-12 shadow-2xl w-3/12 absolute rounded-xl ">
+                <div class="relative inline w-9/12">
+                    <input class="m-0 bg-transparent w-9/12 outline-none px-12  h-16" placeholder="Insira seu e-mail">
+                    <span class="left-5 top-0 absolute text-gray-400"><i class="fas fa-envelope-open-text"></i></span>
+                </div>
+                <button class="-m-1 w-3/12 h-16 bg-green-400 rounded-r-xl text-white font-bold">Assinar</button>
             </div>
         </div>
-        <div class="w-4/6">
-            <img src="image/book.svg" alt="books">
+        <div class="z-10 ">
+            <img class="-mt-40" src="image/section1-book.png" alt="books">
         </div>
     </div>
 </section>
 
 <!--end first section-->
+<!--start seccond section-->
+<div class="rounded-xl max-w-5xl m-36 mx-auto p-0 shadow-2xl">
+    <div class="grid grid-rows-1 grid-flow-col gap-4">
+        <div class="rounded-l-xl  bg-cover bg-no-repeat row-span-5 col-span-4 bg-green-500"
+             style="background-image: url('image/section2-book.png')">
+        </div>
+        <div class="flex flex-col contents">
+            <div class="my-5">
+                <h4 class="text-gray-400 text-2xl">Como pedir</h4>
+                <h2 class="font-bold text-4xl">meus livros</h2>
+            </div>
+            <div class="flex items-center my-2">
+                <i class="py-3 text-white text-3xl text-center w-14 h-14 bg-green-400 rounded-full far fa-mouse-pointer"></i>
+                <h4 class="mx-3 text-gray-400 text-2xl">Escolha seus livros</h4>
+            </div>
+            <div class="flex items-center my-2">
+                <i class="py-3 text-white text-3xl text-center w-14 h-14 bg-green-400 rounded-full far fa-shopping-cart"></i>
+                <h4 class="mx-3 text-gray-400 text-2xl">Faça seu pedido</h4>
+            </div>
+            <div class="flex items-center my-2">
+                <i class="py-3 text-white text-3xl text-center w-14 h-14 bg-green-400 rounded-full far fa-truck-moving"></i>
+                <h4 class="mx-3 text-gray-400 text-2xl">Aguarde na sua casa</h4>
+            </div>
+        </div>
 
 
+    </div>
+
+</div>
+
+
+<!--end seccond section-->
+
+<!--start third section-->
 
 </body>
 </html>
